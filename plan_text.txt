@@ -1,0 +1,552 @@
+Most of the Chaotic Image encryption algorithm, 
+do this 
+
+i) encryption is done via chaotic maps, + pixel manipulation ( bit reversal, diffusion, confusion, etc.)
+ii) the secret keys used to generate this maps are created using CNN, GNN, etc methods, which generate unique and best keys and are always influneced fom image content
+
+## imp papers
+
+
+1)
+
+ImageencryptionalgorithmbasedonDNAencodingandCNN
+Kamlesh Kumar Raghuvanshia, Subodh Kumara, Sushil Kumarb, Sunil Kumarc,∗
+a Department of Computer Science, Ramanujan College, University of Delhi, Delhi, India
+b Department of Computer Science, Shyam Lal College(M), University of Delhi, Delhi, India
+c Department of Instrumentation, Shaheed Rajguru College of Applied Sciences for Women, University of Delhi, Delhi, Indi
+
+Use CNN to generate keys and then same chaos for encryption
+
+2) Image Encryption Using Graph Neural Networks and Chaotic Maps
+A Rashid, M Shree - Congress on Intelligent Systems, 2025 - Springer
+
+Uses GNN to generate keys and then same chaotic encryption
+
+
+
+
+
+from chatgpt :
+Here are some **modern (2024–2026) chaotic image encryption algorithms and research directions** you should look into. I’ll keep it practical so you can actually use them in your project/research.
+
+---
+
+# 🔥 1. Hyperchaotic + Multi-stage Encryption (MOST MODERN)
+
+### Example:
+
+* 5D hyperchaotic system + Arnold Cat Map + Langton’s Ant (2025)
+
+### Key idea:
+
+* Use **high-dimensional chaos (4D/5D systems)** for key generation
+* Combine with:
+
+  * pixel permutation (scrambling)
+  * diffusion (XOR / nonlinear ops)
+  * nonlinear transforms (S-box, automata)
+
+### Why it’s strong:
+
+* High key space
+* Strong resistance to statistical + differential attacks
+
+👉 These schemes typically follow:
+
+```
+Key generation → Substitution → Permutation → Diffusion
+```
+
+📌 Example paper: ([Nature][1])
+
+---
+
+# ⚡ 2. Chaotic + Cellular Automata Hybrid (VERY TRENDING)
+
+### Example:
+
+* 2D Cellular Automata + Logistic Map (2025)
+
+### Key idea:
+
+* Chaotic maps generate randomness
+* Cellular automata perform structured diffusion
+
+### Why it's interesting:
+
+* Parallelizable (good for GPU / real-time)
+* Strong confusion + diffusion balance
+
+📌 Example: ([Nature][2])
+
+---
+
+# 🧠 3. AI + Chaos-based Encryption (LATEST TREND)
+
+### Example:
+
+* Chaos + GPT / ML-assisted key generation
+
+### Key idea:
+
+* AI helps:
+
+  * optimize keys
+  * generate pseudo-random sequences
+  * adapt encryption dynamically
+
+### Reality check:
+
+* Still experimental (not widely trusted yet)
+
+📌 Example: ([MDPI][3])
+
+---
+
+# 🔁 4. Multi-layer Chaotic Maps (Classic → Improved Modern Form)
+
+### Example:
+
+* Multi-layer chaotic maps (2024)
+
+### Key idea:
+
+* Stack multiple chaotic systems:
+
+  * Logistic + Henon + Lorenz etc.
+
+### Structure:
+
+```
+Layer 1 → Scrambling
+Layer 2 → Diffusion
+Layer 3 → Secondary scrambling
+```
+
+📌 Example: ([Taylor & Francis Online][4])
+
+---
+
+# 🔄 5. Chaotic + ECC / Genetic Algorithms (Hybrid Crypto)
+
+### Example:
+
+* Chaos + Elliptic Curve Cryptography + GA
+
+### Why important:
+
+* Combines:
+
+  * traditional cryptography (secure)
+  * chaos (fast for images)
+
+📌 Example: ([Springer Link][5])
+
+---
+
+# 🧬 6. Dynamic / Plaintext-dependent Chaos (VERY IMPORTANT FOR YOU)
+
+### Example:
+
+* Dynamic chaotic system with plaintext-dependent keys (2026)
+
+### Key idea:
+
+* Key depends on input image itself
+
+### Why it matters:
+
+* Prevents:
+
+  * chosen-plaintext attacks
+  * known-plaintext attacks
+
+📌 Example: ([ScienceDirect][6])
+
+---
+
+# 🧪 7. Two-way / Bidirectional Chaotic + Cellular Systems
+
+### Example:
+
+* Two-way chaotic maps + iterative CA (2024)
+
+### Idea:
+
+* Forward + backward chaos interaction
+* Improves diffusion drastically
+
+📌 Example: ([Nature][7])
+
+---
+
+# 📊 What Modern Papers Expect (IMPORTANT FOR YOU)
+
+Most recent papers evaluate using:
+
+* NPCR (≈ 99.6%+)
+* UACI (≈ 33% ideal)
+* Entropy (~7.999 for 8-bit)
+* Correlation (~0)
+
+👉 You already working on NPCR/UACI → you're on correct path.
+
+---
+
+# 🚨 Important Reality (Don’t Ignore This)
+
+* Chaos-based encryption is **NOT standardized like AES**
+* Many papers are:
+
+  * insecure in practice
+  * broken by cryptanalysis later
+
+👉 Even surveys mention:
+
+* chaos works well for images (speed, structure)
+* but needs careful design to avoid weaknesses ([Springer Link][8])
+
+---
+
+# 💡 If YOU want a strong modern algorithm (suggestion)
+
+Based on your work (DNA + confusion/diffusion), best direction:
+
+### Combine:
+
+* 4D/5D hyperchaotic map
+* DNA encoding
+* dynamic key (image-dependent)
+* permutation + diffusion rounds
+
+👉 That’s basically **state-of-the-art research level**
+
+---
+
+# ⚙️ If you want next step
+
+I can:
+
+* give you **one full modern algorithm (2025-level)**
+* OR help improve your current code into **publishable research level**
+
+Just tell me:
+👉 *“design final algorithm for my project”*
+
+[1]: https://www.nature.com/articles/s41598-025-15794-z?utm_source=chatgpt.com "A secure and efficient image encryption scheme based on chaotic systems and nonlinear transformations | Scientific Reports"
+[2]: https://www.nature.com/articles/s41598-025-21225-w?utm_source=chatgpt.com "A dynamic image encryption scheme through 2-D cellular automata and chaotic logistic map | Scientific Reports"
+[3]: https://www.mdpi.com/2673-4591/104/1/20?utm_source=chatgpt.com "Implementing Artificial Intelligence in Chaos-Based Image Encryption Algorithms | MDPI"
+[4]: https://www.tandfonline.com/doi/full/10.1080/09540091.2024.2312108?utm_source=chatgpt.com "Full article: An image encryption algorithm based on multi-layered chaotic maps and its security analysis"
+[5]: https://link.springer.com/article/10.1007/s10462-024-10719-0?utm_source=chatgpt.com "A chaotic based image encryption scheme using elliptic curve cryptography and genetic algorithm | Artificial Intelligence Review | Springer Nature Link"
+[6]: https://www.sciencedirect.com/science/article/abs/pii/S1051200425008395?utm_source=chatgpt.com "Multi-layer image encryption framework using a chaotic system with a dynamic starting point - ScienceDirect"
+[7]: https://www.nature.com/articles/s41598-024-64741-x?utm_source=chatgpt.com "A new encryption algorithm for image data based on two-way chaotic maps and iterative cellular automata | Scientific Reports"
+[8]: https://link.springer.com/article/10.1007/s10207-022-00588-5?utm_source=chatgpt.com "Survey on image encryption techniques using chaotic maps in spatial, transform and spatiotemporal domains | International Journal of Information Security | Springer Nature Link"
+
+
+Here are the **latest (2025–2026) trends specifically in “category 3” → AI + Chaos-based image encryption** (this is currently one of the hottest research directions):
+
+---
+
+# 🧠 🔥 Latest Trends in AI + Chaos Image Encryption
+
+## 1. Deep Learning–Generated Keys (MOST IMPORTANT TREND)
+
+* Researchers now use:
+
+  * CNNs, GANs, Autoencoders
+* To **generate encryption keys instead of traditional chaotic maps**
+
+### What’s new:
+
+* Keys are:
+
+  * dynamic
+  * data-driven
+  * hard to predict
+
+👉 Example:
+
+* GAN-based key generation for IoT/medical images ([Nature][1])
+
+✔ Benefit:
+
+* Much higher randomness than classical chaos
+* Better resistance to attacks
+
+---
+
+## 2. Chaos + Neural Networks (Hybrid Systems)
+
+Instead of replacing chaos, new systems **combine both**:
+
+### Structure:
+
+```
+Deep Learning → generate parameters  
+Chaos Map → generate sequences  
+Encryption → permutation + diffusion
+```
+
+👉 Example:
+
+* DeepKeyGen (DL-based key generator) integrated with encryption ([Nature][1])
+
+✔ Why trending:
+
+* Chaos = fast
+* AI = adaptive
+
+👉 Together = stronger encryption
+
+---
+
+## 3. AI-Based Cryptanalysis (VERY CRITICAL TREND ⚠️)
+
+This is something most people ignore.
+
+### What’s happening:
+
+* Deep learning is now used to **BREAK chaotic encryption**
+
+👉 Example:
+
+* CNN-based known-plaintext attack learning encryption patterns ([ScienceDirect][2])
+
+✔ Meaning:
+
+* Old chaotic algorithms are becoming insecure
+* Your algorithm must resist **AI attacks**, not just statistical tests
+
+---
+
+## 4. Plaintext-Aware / Feature-Aware Encryption (SMART SYSTEMS)
+
+New algorithms:
+
+* extract **features from the image**
+* use them to influence encryption
+
+👉 Example:
+
+* Feature-aware chaotic encryption with SHA-256 + segmentation ([arXiv][3])
+
+✔ Advantage:
+
+* Different image → different encryption behavior
+* Prevents:
+
+  * known-plaintext attacks
+  * chosen-plaintext attacks
+
+---
+
+## 5. AI + Chaos for Medical / IoT Security (APPLICATION TREND)
+
+Most new work focuses on:
+
+* medical images
+* IoT devices
+
+👉 Why:
+
+* need lightweight + secure encryption
+
+👉 Example:
+
+* DL + chaos using ResNet/MobileNet for key generation ([ResearchGate][4])
+
+---
+
+## 6. Generative Encryption (VERY NEW 🚀)
+
+* Use GANs / autoencoders to:
+
+  * transform image into **unrecognizable but usable form**
+
+👉 Example:
+
+* adversarial autoencoders for secure transmission ([Nature][1])
+
+✔ This is closer to:
+
+* learned encryption rather than rule-based
+
+---
+
+# 📊 What This Means for YOU (Important Insight)
+
+Your current work:
+
+* chaos + DNA + diffusion ✔️
+
+To be **latest-trend compliant**, you should add:
+
+### ✅ Must add:
+
+* plaintext-dependent key (SHA-256 or features)
+* dynamic DNA rules
+
+### 🚀 Strong upgrade:
+
+* use a small ML model to:
+
+  * generate chaotic parameters
+  * or modify diffusion
+
+### ⚠️ Critical:
+
+* test against:
+
+  * NPCR/UACI (you already do)
+  * AND robustness vs learning-based attacks
+
+---
+
+# 🧩 Final Summary (Short)
+
+Latest trend in AI + chaos encryption:
+
+1. AI-generated keys
+2. Hybrid AI + chaotic systems
+3. AI used for attacking encryption (major shift)
+4. Plaintext-dependent adaptive encryption
+5. Application-driven (IoT, medical)
+6. Generative encryption (GAN-based)
+
+---
+
+If you want, I can:
+👉 design a **2026-level algorithm combining Chaos + DNA + AI** based on your current code (very useful for publication)
+
+[1]: https://www.nature.com/articles/s41598-026-38780-5?utm_source=chatgpt.com "Enhanced image encryption with deep generative models ..."
+[2]: https://www.sciencedirect.com/science/article/pii/S1877050925027991?utm_source=chatgpt.com "Cryptanalysis of chaos-based image encryption using DL ..."
+[3]: https://arxiv.org/abs/2505.00593?utm_source=chatgpt.com "A Novel Feature-Aware Chaotic Image Encryption Scheme For Data Security and Privacy in IoT and Edge Networks"
+[4]: https://www.researchgate.net/publication/392813500_Medical_Image_Encryption_Using_Chaotic_Algorithms_and_Deep_Learning?utm_source=chatgpt.com "Medical Image Encryption Using Chaotic Algorithms and ..."
+
+
+
+
+Here’s a clean **“Latest Trends” paragraph with bullet points** you can directly use in your report/paper:
+
+---
+
+## 🔥 Latest Trends in Chaotic Image Encryption
+
+Recent advancements in chaotic image encryption have shifted from static, single-map designs to **adaptive, hybrid, and intelligent systems**. Modern approaches increasingly integrate **artificial intelligence (AI), cryptographic hashing, and high-dimensional chaotic models** to enhance security and unpredictability. Rather than relying solely on fixed keys and traditional chaotic maps, current research emphasizes **dynamic, plaintext-dependent encryption mechanisms** that adapt based on the input image. This evolution is largely driven by the need to resist not only classical statistical and differential attacks but also emerging **AI-based cryptanalysis techniques**.
+
+### Key Trends:
+
+* **AI-assisted key/parameter generation**: Machine learning models are used to generate dynamic and highly random initial conditions for chaotic systems.
+* **Plaintext-dependent encryption**: Keys and parameters are derived from the input image (e.g., using SHA-256), ensuring different encryption behavior for each image.
+* **Hyperchaotic systems (4D/5D)**: Higher-dimensional chaotic maps are preferred due to their larger key space and stronger complexity.
+* **Hybrid models**: Integration of chaos with DNA encoding, cellular automata, and traditional cryptographic techniques.
+* **Adaptive encryption frameworks**: Parameters such as diffusion strength, number of rounds, and permutation strategies change dynamically.
+* **Resistance to AI-based attacks**: New designs consider robustness against deep learning-based cryptanalysis.
+* **Application-specific optimization**: Focus on secure and efficient encryption for domains like medical imaging and IoT devices.
+
+---
+
+If you want, I can also convert this into:
+
+* **IEEE paper style**
+* or expand it into a full **“Literature Review” section**
+
+
+Here’s a focused version covering **only AI/ML + cryptography–related trends** in modern image encryption:
+
+---
+
+## 🤖🔐 Latest Trends in AI/ML-based Cryptographic Image Encryption
+
+Recent developments at the intersection of artificial intelligence and cryptography have led to the emergence of **intelligent, adaptive encryption frameworks**. Instead of relying purely on mathematically defined randomness, modern systems incorporate **machine learning techniques to enhance key generation, system dynamics, and security evaluation**. The goal is to build encryption schemes that are not only statistically secure but also **robust against learning-based attacks**.
+
+### Key Trends:
+
+* **AI-driven key and parameter generation**: Neural networks (e.g., CNNs, GANs) are used to generate highly unpredictable keys and initial conditions for encryption systems.
+* **Learning-based adaptive encryption**: ML models dynamically adjust encryption parameters (e.g., diffusion strength, number of rounds) based on input data characteristics.
+* **Plaintext-aware intelligent systems**: AI extracts features from the input image to influence encryption behavior, making schemes resistant to known/chosen-plaintext attacks.
+* **Hybrid AI + cryptography models**: Integration of machine learning with traditional cryptographic primitives (hashing, block ciphers, chaotic systems) for improved security.
+* **AI-assisted cryptanalysis**: Deep learning models are increasingly used to detect patterns and vulnerabilities in encryption schemes, pushing the need for more robust designs.
+* **Generative encryption techniques**: Use of GANs and autoencoders to transform images into secure representations, moving toward learned encryption paradigms.
+* **Lightweight AI for secure systems**: Deployment of efficient ML models (e.g., MobileNet, TinyML) for encryption in resource-constrained environments like IoT.
+
+---
+
+If you want to make it stronger for a paper, I can:
+
+* add **1–2 line explanation under each bullet (IEEE style)**
+* or map these trends directly to your **own algorithm design**
+
+
+Got it — here’s a **clean, focused list of technologies used in AI/ML + cryptography–based image encryption** (no extra theory, just what’s actually used in modern systems):
+
+---
+
+## 🤖🔐 Technologies Used in AI/ML-Based Cryptographic Image Encryption
+
+### 🧠 Artificial Intelligence / Machine Learning
+
+* **Convolutional Neural Networks (CNNs)** – feature extraction, key generation
+* **Generative Adversarial Networks (GANs)** – random key synthesis, generative encryption
+* **Autoencoders / Variational Autoencoders (VAE)** – learned image transformation
+* **Recurrent Neural Networks (RNNs, LSTM)** – sequence/key generation
+* **Transformers (emerging)** – attention-based feature modeling
+* **Reinforcement Learning (RL)** – adaptive encryption parameter tuning
+
+---
+
+### 🔑 Cryptographic Techniques
+
+* **SHA-256 / SHA-3 hashing** – plaintext-dependent key generation
+* **AES (hybrid systems)** – combined with AI for secure encryption
+* **Elliptic Curve Cryptography (ECC)** – secure key exchange
+* **S-box design (AI-optimized)** – nonlinear substitution
+* **Pseudo-Random Number Generators (PRNGs)** – randomness source
+
+---
+
+### 🌪️ Chaos-Based Systems (still widely integrated)
+
+* **Logistic Map, Henon Map, Tent Map**
+* **Lorenz, Chen, Rossler systems**
+* **Hyperchaotic systems (4D/5D/6D)**
+* **Fractional-order chaotic systems**
+
+---
+
+### 🧬 Hybrid / Supporting Techniques
+
+* **DNA Encoding & DNA Operations** – substitution + diffusion
+* **Cellular Automata (CA)** – parallel diffusion
+* **Arnold Cat Map / Permutation matrices** – pixel scrambling
+* **Bit-plane decomposition** – fine-grained encryption
+* **Compressive sensing** – encryption + compression
+
+---
+
+### ⚙️ System Design Enhancements
+
+* **Plaintext-dependent key generation** (image hash, features)
+* **Dynamic parameter control** (adaptive rounds, diffusion strength)
+* **Multi-layer encryption architectures**
+* **Parallel processing (GPU-based)**
+
+---
+
+### ⚔️ Security & Evaluation Tools (AI-influenced)
+
+* **Deep learning-based cryptanalysis (CNN attackers)**
+* **Statistical analysis tools (entropy, correlation)**
+* **Differential attack metrics (NPCR, UACI)**
+
+---
+
+## 🎯 Summary Insight
+
+Modern systems don’t rely on a single technology — they combine:
+👉 **AI + Cryptography + Chaos + Adaptive Design**
+
+---
+
+If you want next step, I can:
+👉 map these technologies directly into a **complete architecture diagram for your project** (very useful for report/publication)
